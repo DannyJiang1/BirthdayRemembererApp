@@ -57,8 +57,8 @@ struct BirthdayItem: Identifiable, Codable {
             day: day
         ))!
         
-        // If this year's birthday has passed, use next year's
-        if thisYearBirthday < now {
+        // If this year's birthday has passed (not including today), use next year's
+        if thisYearBirthday < calendar.startOfDay(for: now) {
             thisYearBirthday = calendar.date(from: DateComponents(
                 year: currentYear + 1,
                 month: month,
@@ -72,8 +72,14 @@ struct BirthdayItem: Identifiable, Codable {
     var daysUntilBirthday: Int {
         let calendar = Calendar.current
         let now = Date()
-        let days = calendar.dateComponents([.day], from: now, to: nextBirthday).day ?? 0
-        print("🔍 Debug: Month: \(month), Day: \(day), Next birthday: \(nextBirthday), Now: \(now), Days until: \(days)")
+        let today = calendar.startOfDay(for: now)
+        let birthdayThisYear = calendar.date(from: DateComponents(
+            year: calendar.component(.year, from: now),
+            month: month,
+            day: day
+        ))!
+        
+        let days = calendar.dateComponents([.day], from: today, to: nextBirthday).day ?? 0
         return days
     }
     
