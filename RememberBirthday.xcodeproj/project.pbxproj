@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E612EF72E6DFAF2007A9AB6 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 7E612EF62E6DFAF2007A9AB6 /* FirebaseCore */; };
 		7E968FEF2E6A70A5001E1C63 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 7E968FEE2E6A70A5001E1C63 /* FirebaseAuth */; };
 		7E968FF12E6A70A5001E1C63 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 7E968FF02E6A70A5001E1C63 /* FirebaseFirestore */; };
 /* End PBXBuildFile section */
@@ -58,6 +59,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E968FEF2E6A70A5001E1C63 /* FirebaseAuth in Frameworks */,
+				7E612EF72E6DFAF2007A9AB6 /* FirebaseCore in Frameworks */,
 				7E968FF12E6A70A5001E1C63 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -121,6 +123,7 @@
 			packageProductDependencies = (
 				7E968FEE2E6A70A5001E1C63 /* FirebaseAuth */,
 				7E968FF02E6A70A5001E1C63 /* FirebaseFirestore */,
+				7E612EF62E6DFAF2007A9AB6 /* FirebaseCore */,
 			);
 			productName = RememberBirthday;
 			productReference = 7E968FB12E6A6D47001E1C63 /* RememberBirthday.app */;
@@ -407,6 +410,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UYSMM93YZV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -433,6 +437,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UYSMM93YZV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -573,6 +578,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		7E612EF62E6DFAF2007A9AB6 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E968FED2E6A70A5001E1C63 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
 		7E968FEE2E6A70A5001E1C63 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 7E968FED2E6A70A5001E1C63 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
